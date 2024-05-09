@@ -1,0 +1,173 @@
+/* Fonts font-face */
+
+/* roboto-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+  }
+  /* roboto-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-cyrillic_latin-500.woff2') format('woff2'); 
+  }
+  /* roboto-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2');
+  }
+  /* play-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Play';
+    font-weight: 400;
+    src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+  }
+  /* play-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-weight: 700;
+    src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+  }
+  /* Css-змінна */
+:root {
+    --color-text-dark: #011C44;
+    --color-text-blue: #2B7FFF;
+    --color-text-light: #FFFFFF;
+    --color--backgraund: #011F4A;
+    --color-form: #747272;
+    --color-text-button:#011C44;
+}
+/* Global Styles */
+body{
+    color: var(--color-text-dark);
+    font-family: "Roboto", sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Heder */
+.link-heder-text{
+    color: var(--color-text-dark); 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.18;
+}
+.link-heder-text:hover{
+    color: var(--color-text-blue); 
+}
+
+/* .icon:hover {
+    color: var(--color-text-blue);
+} */
+
+.cosmClinik {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.18;
+
+}
+
+.bigBZ{
+    color: var(--color-text-blue);
+    font-family: "Play" ,sans-serif;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 0.9;
+}
+
+.button{
+    cursor: pointer;
+    background-color: var(--color-text-blue);
+    color: var(--color-text-light);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.18;
+    border: 3px solid var(--color-text-blue);
+    border-radius: 32px;
+}
+.button:hover{
+    color:var(--color-text-button);
+    background-color: transparent;
+}
+
+.textUnderButton{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* main section about us */
+.zagolovok {
+    font-family: 'Play';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.3;
+}
+
+.colorBlu {
+    color: var(--color-text-blue);
+}
+
+.textAboutUs{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+/* main section why we */
+
+.textWyWe {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+/* main section our procedures */
+
+
+
+/* main section how to find us plus form */
+.forma {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+/* FOOTER */
+
+.textFooter {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color-text-light);
+}
+
+.textFooter:hover {
+    color: var(--color-text-blue); 
+}
+
+.copiret{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.15;
+    color: var(--color-form);
+}
+
+footer{
+    background-color:  var(--color-text-dark);
+}
