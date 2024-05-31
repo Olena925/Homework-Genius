@@ -87,7 +87,7 @@ a {
 
 .navHeder {
     display: flex;
-    background-color: rgb(241 236 236 / 25%); /* прозорість кольору */
+    background-color: rgb(241 236 236 / 25%);
     /* background-color: rgba(255, 99, 71, 0.2); прозорість кольору */
     /* opacity: 0.4; */
     /* justify-content:  space-around; */
@@ -113,10 +113,13 @@ a {
     font-weight: 700;
 }
 
-/* .icon>svg:hover {
-    color: var(--color-text-blue);
-    fill: red;
-} */
+.icon {
+    fill: var(--color-text-dark);
+}
+
+.icon:hover {
+    fill: var(--color-text-blue);
+}
 
 .bigBZ{
     color: var(--color-text-blue);
@@ -258,6 +261,7 @@ a {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+    padding-top: 130px;
 }
 
 .centrContainer {
@@ -277,8 +281,9 @@ a {
     width: 316px;
     height: 181px;
     border-radius: 32px;
-    background-color: #fff;
+    background-color: var(--color-text-light);
     padding: 24px 32px;
+    fill: var(--color-text-blue)
 }
 
 .textWyWe {
@@ -307,18 +312,21 @@ a {
 
 .caruseButton {
     display: flex;
-    padding: 0;
+    padding: 10px;
     border-radius: 50%;
     cursor: pointer;
+    background-color: var(--color-text-light);
+    border: 1px solid var(--color-text-dark);
+    fill: var(--color-text-dark);
     /* background-color: transparent; */
     /* fill: var(--color-text-light);
     background-color:var(--color-text-blue); */
 }
 
-.colorSVG {
-    /* background-color: transparent;
+.caruseButton:hover {
+    background-color: var(--color-text-blue);
+    border: 1px solid var(--color-text-light);
     fill: var(--color-text-light);
-    background-color:var(--color-text-blue); */
 }
 
 .ourProcedList{
@@ -401,12 +409,12 @@ a {
     display: flex;
     gap: 24px;
     padding-top: 16px;
-    /* fill: red; */
+    fill: var(--color-text-light);
 }
 
-/* .iconFooter:hover {
+.iconFooter:hover {
     fill: var(--color-text-blue);
-} */
+}
 
 .copiret {
     width: 335px;
