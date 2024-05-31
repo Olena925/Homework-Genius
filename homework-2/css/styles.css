@@ -78,6 +78,8 @@ a {
 /* Heder */
 
 /* .vectorHeder {
+    background-color: white;
+    opacity: 0.4;
     background-image: url(../images/vectorHeder.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -85,9 +87,13 @@ a {
 
 .navHeder {
     display: flex;
-    justify-content:  space-around;
-    /* gap: 240px; */
+    background-color: rgb(241 236 236 / 25%); /* прозорість кольору */
+    /* background-color: rgba(255, 99, 71, 0.2); прозорість кольору */
+    /* opacity: 0.4; */
+    /* justify-content:  space-around; */
+    gap: 255px;
     align-items: center;
+    padding: 32px 99px;
 }
 
 .menuHeder {
@@ -96,13 +102,15 @@ a {
 }
 
 .link-heder-text{
-    color: var(--color-text-dark); 
-    font-weight: 700;
+    color: var(--color-text-dark);
+    font-family: 'Roboto';
+    font-weight: 400; 
     font-size: 18px;
     line-height: 1.18;
 }
 .link-heder-text:hover{
     color: var(--color-text-blue); 
+    font-weight: 700;
 }
 
 /* .icon>svg:hover {
@@ -135,6 +143,7 @@ a {
 
 .margBlockBZ {
     margin-left: 200px;
+    padding-top: 16px;
 }
 
 .cosmClinik {
@@ -150,7 +159,8 @@ a {
     cursor: pointer;
     background-color: var(--color-text-blue);
     color: var(--color-text-light);
-    font-weight: 500;
+    font-family: 'Roboto';
+    font-weight: 600;
     font-size: 18px;
     line-height: 1.18;
     border: 3px solid var(--color-text-blue);
@@ -168,6 +178,7 @@ a {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.5;
+    padding-left: 16px;
 }
 
 /* main section about us */
