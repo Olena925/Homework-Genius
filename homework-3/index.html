@@ -208,11 +208,65 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
           <div class="forma">
-            <p>
+            <p class="zagolovokFormPage">
               Запишіться <span class="colorBlu">безкоштовно</span> <br />та
               отримайте подарунок
             </p>
             <!-- forma + button -->
+            <form name="form-page" action="off">
+              <div>
+                <label for="user">
+                  <input
+                    class="widthInput"
+                    type="text"
+                    id="user"
+                    name="user"
+                    placeholder="Ваше Ім'я_Прізвище"
+                    minlength="2"
+                    maxlength="30"
+                    pattern="^(([Є-ЯҐа-їґ]{4,12})([_]{1})([[Є-ЯҐа-їґ]{4,12}))$"
+                    required
+                  />
+                </label>
+              </div>
+
+              <div>
+                <label for="tel">
+                  <input
+                    class="widthInput"
+                    type="tel"
+                    id="tel"
+                    name="user"
+                    placeholder="Ваш телефон +380..."
+                    pattern="^\+[0-9]{12}"
+                    required
+                  />
+                </label>
+              </div>
+
+              <div>
+                <label for="email">
+                  <input
+                    class="widthInput"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Електронна пошта"
+                    required
+                  />
+                </label>
+              </div>
+
+              <button class="button btnFP" type="submit">
+                Записатись безкоштовно
+              </button>
+              <p class="textFormPage">
+                Натискаючи на кнопку я погоджуюсь <br />
+                <a class="textFormPage" href="#"
+                  >з політикою конфіденційності</a
+                >
+              </p>
+            </form>
           </div>
         </div>
       </section>
@@ -304,7 +358,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
         <form name="modal-form" autocomplete="off">
@@ -320,7 +374,7 @@
               name="user-name"
               placeholder="Ім'я та Прізвище"
               minlength="2"
-              maxlength="20"
+              maxlength="30"
               pattern="^(([Є-ЯҐа-їґ]{4,12})([_]{1})([[Є-ЯҐа-їґ]{4,12}))$"
               required
             />

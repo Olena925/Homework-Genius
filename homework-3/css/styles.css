@@ -388,6 +388,7 @@ a {
 
 .iframe {
     border-radius: 32px;
+    height: 480px;
 }
 
 .forma {
@@ -530,4 +531,59 @@ a {
 
 .form-terms-link {
     color: var(--color-text-blue);
+}
+
+/* Form Page */
+
+.forma {
+    background-color: var(--color-text-dark);
+    background-image: url(../images/bgFP.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 422px;
+    height: 480px;
+    text-align: center;
+}
+
+.zagolovokFormPage {
+    width: 274px;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--color-text-light);
+    margin: 0px 0px 32px 14px;
+    /* margin-bottom: 32px;
+    margin-left: 14px;
+    margin-top: 0; */
+}
+
+.widthInput {
+    width: 310px;
+    color: var(--color-text-light);
+    padding: 16px;
+    border-radius: 32px;
+    border: 2px solid var(--color-form);
+    background-color: transparent;
+    margin-bottom: 16px;
+}
+
+.widthInput:focus {
+    background-color: var(--color--backgraund);
+    color: var(--color-text-light);
+}
+
+.textFormPage {
+    color: var(--color-form);
+    font-size: 12px;
+}
+
+.textFormPage > a {
+    text-decoration: underline;
+}
+
+.textFormPage > a:hover {
+    color: var(--color-text-light);
+}
+
+.btnFP:hover {
+    color: var(--color-text-light);
 }
