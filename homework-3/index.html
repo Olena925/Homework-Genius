@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -67,7 +67,7 @@
               Beauty<br />
               Zone
             </p>
-            <button class="button" type="button">
+            <button class="button modal-btn-open" type="button">
               <!-- <a class="icon" href="tel:+380960000007"> Замовити дзвінок </a> що має робити -->
               Замовити дзвінок
             </button>
@@ -106,19 +106,19 @@
             <img class="cheek" src="./images/aboutUsCheek.jpg" alt="cheek" />
             <div class="fewStars">
               <img
-                class="padingStarTop"
+                class="padingStarTop spin"
                 src="./images/StarTwo.svg"
                 alt="star"
               />
               <img
-                class="padingStarRight"
+                class="padingStarRight spin"
                 src="./images/StarThree.svg"
                 alt="star"
               />
             </div>
           </div>
           <div class="oneStar">
-            <img src="./images/StarOne.svg" alt="star" />
+            <img class="spin" src="./images/StarOne.svg" alt="star" />
             <img class="neck" src="./images/aboutUsNeck.jpg" alt="neck" />
           </div>
         </div>
@@ -183,7 +183,7 @@
               <li><img src="./images/proceduresBrash.jpg" alt="brash" /></li>
             </ul>
 
-            <button class="caruseButton" type="button">
+            <button class="caruseButton next" type="button">
               <svg width="22" height="22">
                 <use href="./images/symbol-defs.svg#icon-arrowS"></use>
               </svg>
@@ -241,7 +241,7 @@
           </ul>
           <address class="adressList">
             <!-- tel email adress plus icon tel facebook instagramm -->
-            <ul>
+            <ul class="widthStreet">
               <li>
                 <a class="textFooter" href="tel:+380960000007"
                   >+ 38 (096) 000 00 07</a
@@ -303,5 +303,65 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+        <form name="modal-form" autocomplete="off">
+          <h2>Замовити дзвінок</h2>
+          <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+
+          <div>
+            <label class="visually-hidden" for="user-name"> Ім'я </label>
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Ім'я та Прізвище"
+              minlength="2"
+              maxlength="20"
+              pattern="^(([Є-ЯҐа-їґ]{4,12})([_]{1})([[Є-ЯҐа-їґ]{4,12}))$"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="visually-hidden" for="user-tel"> Телефон </label>
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Телефон"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="visually-hidden" for="user-email">
+              Електронна пошта
+            </label>
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Електронна пошта"
+              required
+            />
+          </div>
+
+          <button class="button" type="submit">Замовити дзвінок</button>
+          <p>
+            Натискаючи на кнопку я погоджуюсь
+            <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
