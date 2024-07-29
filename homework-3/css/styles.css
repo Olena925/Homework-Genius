@@ -370,6 +370,23 @@ a {
     padding: 0;
 }
 
+.ourProcedListMask {
+    position: relative;
+}
+
+.textMask {
+    position: absolute;
+    bottom: 13px;
+    right: 88px;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--color-text-light);
+}
+
+.margMask {
+    margin-left: 28px;
+}
+
 
 
 /* main section how to find us plus form */
@@ -441,14 +458,23 @@ a {
     color: var(--color-text-blue); 
 }
 
+
 .widthStreet {
     width: 200px;
+}
+
+.lineHeight{
+    line-height: 0;
+}
+
+.marginAddress {
+    margin-top: 8px;
 }
 
 .iconFooter {
     display: flex;
     gap: 24px;
-    padding-top: 16px;
+    padding-top: 12px;
     fill: var(--color-text-light);
 }
 
